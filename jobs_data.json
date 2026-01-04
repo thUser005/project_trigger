@@ -1,0 +1,14 @@
+[
+  {
+    "repo": "project-options",
+    "workflow": "main.yml",
+    "ref": "main",
+    "time": "09:20"
+  },
+  {
+    "repo": "project_g_api",
+    "workflow": "buy.yml",
+    "ref": "main",
+    "time": "13:30"
+  }
+]
