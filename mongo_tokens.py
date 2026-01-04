@@ -3,6 +3,10 @@ import base64
 import hashlib
 from pymongo import MongoClient
 from cryptography.fernet import Fernet
+from dotenv import load_dotenv
+
+# load .env ONLY for local dev
+load_dotenv()
 
 # =========================
 # ENCRYPTION SETUP
@@ -49,6 +53,5 @@ def get_token(token_key: str) -> str:
     # decrypt only if encrypted
     if doc.get("encrypted", False):
         return decrypt_value(value)
-
     # fallback (in case of legacy plaintext)
     return value
