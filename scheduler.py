@@ -8,7 +8,7 @@ from trigger_action import trigger_github_action
 # =========================
 JOBS_FILE = "jobs_data.json"
 
-TESTING_FLAG = True   # 🔁 set False in production
+TESTING_FLAG = False   # 🔁 set False in production
 
 # =========================
 # LOAD JOBS
