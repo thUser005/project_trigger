@@ -3,7 +3,7 @@ import requests
 import os
 
 def trigger_github_action(repo, workflow, ref):
-    token = get_token("GITHUB_TOKEN")
+    token = get_token("PAT_TOKEN")
 
     owner = os.getenv("GITHUB_OWNER")
 
